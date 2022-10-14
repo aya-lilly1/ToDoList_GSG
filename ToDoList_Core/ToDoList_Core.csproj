@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="CsvHelper" Version="28.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.16" />
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\ToDoList_Common\ToDoList_Common.csproj" />
+	  <ProjectReference Include="..\ToDoList_DbModel\ToDoList_DbModel.csproj" />
+	  <ProjectReference Include="..\ToDoList_ModelView\ToDoList_ModelView.csproj" />
+		<ProjectReference Include="..\ToDoList_ModelView\ToDoList_Common.csproj" />
+	</ItemGroup>
+
+</Project>
